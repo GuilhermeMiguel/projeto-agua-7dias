@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../../styles/dias.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>7 dias de 2L de água</title>
+</head>
+<body>
+  
+    <div class="container">
+    
+      <div class="titulo">
+        <div class="nav">
+          <h1>
+            <span class="diaAtual"></span>   
+            <i class="fas fa-glass-whiskey"></i>
+          </h1>
+          
+            <h1>
+              <i class="fas fa-sort-up botaoAumentaDia"></i>
+              <i class="fas fa-sort-down botaoDiminuiDia"></i>
+            </h1>
+      </div>
+
+          <h3>Beba 2 Litros de água!!!!</h3>
+    </div>
+        
+      <div class="conteudo">
+        <div class="copo-grande">
+          <div class="faltante" id="faltante" style="visibility: visible;"> 
+            <span id="litros">2L</span>
+            <small>Faltantes</small>
+          </div>
+            <div class="quantidade" id="quantidade" style="visibility: visible; height: 0px;"></div>
+        </div>
+
+        
+        <div class="somador-quantidade">
+          <p class="text">Quantos copos de água (250 ml) você tomou hoje?</p>
+
+          <button class="controladores diminuiQuantidade"><i class="fas fa-minus"></i></button>
+            <span class="quantidadeMl">0 ml</span>
+          <button class="controladores aumentaQuantidade"><i class="fas fa-plus"></i></button>
+        </div>
+    </div>
+
+    <div class="area-acoes">
+      <button class="botaoCancelar">Cancelar</button>
+      <button class="botaoSalvar">Salvar</button>
+    </div>
+  </div>
+    
+    <script src="../../scripts/dias.js"></script>
+</body>
+</html>

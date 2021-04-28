@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+:root {
+  --border-color: #144fc6;
+  --fill-color: #6ab3f8;
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3494e4;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 10px 0 0;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.container {
+  min-width: 850px;
+  background-color: #176baf;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0.8rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .titulo {
+  width: 100%;
+}
+
+.container .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container  h1:nth-child(2) {
+  display: grid;
+  cursor: pointer;
+}
+
+.container .conteudo
+{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.area-acoes button
+{
+  color: rgb(153, 153, 153);
+  color: #000;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.area-acoes button:hover
+{
+  opacity: 0.9;
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #176baf;
+}
+
+.copo-grande {
+  background-color: #fff;
+  border: 4px solid var(--border-color);
+  color: var(--border-color);
+  border-radius: 12px 12px 70px 70px;
+  height: 330px;
+  width: 40%;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.somador-quantidade {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin-left: 50px;
+}
+
+.somador-quantidade span {
+    background-color: #fff;
+    color: #999;
+    /* border-radius: 50%; */
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: 0.4s ease;
+    margin: 15px;
+}
+
+.controladores{
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.controladores:hover{
+  color: #000;
+}
+
+.botaoAumentaDia:hover, .botaoDiminuiDia:hover {
+  color:var(--line-border-empty);
+}
+
+.faltante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.faltante span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faltante small {
+  font-size: 12px;
+}
+
+.quantidade {
+  background-color: var(--fill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text {
+  text-align: center;
+  margin: 0 0 5px;
+}
+
+
+
