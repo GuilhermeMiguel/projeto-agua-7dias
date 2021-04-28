@@ -41,7 +41,7 @@ $botaoComecar.addEventListener("click", () => {
         if(criarNovoUsuario)
         {          
             salvaDadosUsuario($nomeUsuario, $senhaUsuario);
-            window.location.href = "/pages/dias/index.html";
+            window.location.href = "./pages/dias/index.html";
         }
         else
         {
@@ -52,7 +52,7 @@ $botaoComecar.addEventListener("click", () => {
     else {
         if($senhaUsuario == usuarioSalvo.senha){
             sessionStorage.setItem("usuarioLogado", $nomeUsuario);
-            window.location.href = "/pages/dias/index.html"
+            window.location.href = "./pages/dias/index.html"
         }
         else {
             alert("Senha inválida, tente novamente!")
